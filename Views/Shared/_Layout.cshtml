@@ -6,34 +6,50 @@
     <title>@ViewData["Title"] - LBA_Proyect</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/988a301a8c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">LBA_Proyect</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+<div class="header">
+        <header>
+            <img src="~/img/logoLBA.png" alt="La boutique del anteojo" class="logo">
+            <div class="head">
+                <h1 class="title">La boutique del anteojo</h1>
+            </div>
+            <div class="logos-carrusel">
+                <section class="logo__slider" id="logo-slider-container">
+                    <div class="slider__logos" id="slider-logos-js"></div>
+                </section>
+            </div>
+            <div id="main-container">
+                <div id="hamburger">
+                    <nav>
+                        <button>
+                            <span class="top-line"></span>
+                            <span class="middle-line"></span>
+                            <span class="bottom-line"></span>
+                        </button>
+                    </nav>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+            <div class="option-bar-container">
+                <ul class="options-bar">
+                    <li><a class="inicio-nav" href="">Inicio</a></li>
+                    <li><a class="contacto-nav" href="">Contacto</a></li>
+                    <li><a class="sobre-nosotros-nav" href="">Sobre nosotros</a></li>
+                    <li><a class="productos-nav" href="">Productos</a></li>
+                </ul>                
+            </div>
+            <div class="irp-container">
+                <ul>
+                    <li><a class="perfil-nav" href=""><i class="fas fa-user"></i></a></li>
+                    <li><a class="iniciar-sesion-nav" href=""><i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a class="registrese-nav" href=""><i class="fas fa-key"></i></a></li>                
+                </ul>
+            </div>
+        </header>
+</div>        
             @RenderBody()
-        </main>
-    </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">

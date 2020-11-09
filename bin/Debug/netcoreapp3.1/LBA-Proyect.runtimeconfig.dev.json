@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Puerco y Criatura\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Puerco y Criatura\\.nuget\\packages"
+    ]
+  }
+}
