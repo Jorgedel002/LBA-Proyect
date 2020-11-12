@@ -51,11 +51,41 @@
 </div>        
             @RenderBody()
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - LBA_Proyect - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    <footer>
+            <div class="footer-container">
+                <h1 class="footer-title">La boutique del anteojo</h1>
+                <div class="paginas-container">
+                    <h1 class="paginas-title">Paginas</h1>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Productos</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociales">
+                    <img src="~/img/logo-facebook-2.png" alt="facebook-link" class="logo-facebook">
+                    <img src="~/img/instagram-logo.jpg" alt="instagram-link" class="logo-instagram">
+                </div>
+                <h2 class="beiro">Av.Francisco Beiro 5665</h2>
+                <img src="~/img/Captura de pantalla (3).png" alt="ubicación" class="ubicacion" >
+                @* <a href="https://www.google.com/maps/place/Av.+Francisco+Beir%C3%B3+5665,+Buenos+Aires/@-34.6167789,-58.5296224,17.17z/data=!4m13!1m7!3m6!1s0x95bcb71661588a8b:0xf09d99bc532d2044!2sAv.+Francisco+Beir%C3%B3+5665,+Buenos+Aires!3b1!8m2!3d-34.6168471!4d-58.5291014!3m4!1s0x95bcb71661588a8b:0xf09d99bc532d2044!8m2!3d-34.6168471!4d-58.5291014" class="google-maps" target="_Blank">Google maps - Ubicación</a> *@
+                <div class="preguntas">
+                    <h1 class="title-preguntas">Preguntas frecuentes</h1>
+                    <ul>
+                        <li><a href="#">¿que metodos de pago utilizamos?</a></li>
+                        <li><a href="#">¿necesito receta?</a></li>
+                        <li><a href="#">¿se puede retirar por el local?</a></li>
+                        <li><a href="#">¿hacen envios?</a></li>
+                        <li><a href="#">¿que dias y horarios abren?</a></li>
+                    </ul>
+                </div>
+                <div class="contacto-num">
+                    <h1 class="title-contacto">Contacto</h1>
+                    <h2 class="numero-contacto">11 3420-0053</h2>
+                </div>
+            </div>
+        </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

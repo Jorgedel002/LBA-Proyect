@@ -23,7 +23,7 @@ let active = true;
 //al clickear que se mueva el slider
 
 sliderNav.addEventListener("click", (e) => slideImage(e.target.id.slice(-1)));
-
+sliderNav.addEventListener("click", (e) => slideImage(e.target.id.slice(2)));
 
 //Dibujar slide y navegación
 for(let img in images){
@@ -32,7 +32,7 @@ for(let img in images){
     slider.innerHTML += `<img src="${images[img]}" class="slider__img" style="width: ${100/images.length}%">`;
     
     //Cargar navegación
-    sliderNav.innerHTML += `<span class="${img==0 ? 'slider-nav slider-nav--active' : 'slider-nav'}" id="slider-nav-${img}">`;
+    // sliderNav.innerHTML += `<span class="${img==0 ? 'slider-nav slider-nav--active' : 'slider-nav'}" id="slider-nav-${img}">`;
 }
 
 //variable contador 
@@ -62,7 +62,7 @@ function slideImage(id){
     slider.style.left = "-" + id + "00%";
   }
 
-let navIcons = [...document.getElementsByClassName("slider-nav")];
+ let navIcons = [...document.getElementsByClassName("slider-navigation")];
 
 function setActive(id) {
 
@@ -82,4 +82,5 @@ sliderContainer.addEventListener("mouseover", ()=>{
 sliderContainer.addEventListener("mouseout", ()=>{
     if(!active) active = true;
 });
+
 

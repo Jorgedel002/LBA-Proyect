@@ -159,66 +159,43 @@ header{
 }
 .slider__navigation{
   display: flex;
-  justify-content: space-evenly;
-  width: 50%;
+  justify-content: space-around;
+  width: 100%;
   margin: 1em auto;
+  position: relative;
+  bottom: 700px;
+  right: 235px;
+  color: white;
+  cursor: pointer;
 }
 .slider-nav{
   width: 15px;
   height: 15px;
-  background-color: rgb(182, 179, 179);
-  border-radius: 50%;
-  box-shadow: 2px 3px 2px rgb(94, 94, 94) inset;
-}
-.slider-nav--active{
-  background-color: rgb(50, 50, 243);
-  box-shadow: 2px 3px 2px rgb(20, 20, 241);
-}
 
-/*logos carrusel*/
-#logos-carrusel{
-  position: relative;
-}
-.logo__slider{
-  width: 20%;
-  margin: auto;
-  position: relative;
-  bottom: 320px;
-  overflow: hidden;
-}
-.slider__logos{
-  position: relative;
-  left: 0;
-  transition: all .5s;
-  width: 30%;
-  z-index: 500;
 }
 /* slider button */
-
-.right-left{
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  bottom: 1000px;
-  color: white;
-  cursor: pointer;
-}
 .fa-chevron-right{
   font-size: 3rem;
+  position: relative;
+  left: 690px;
 }
 .fa-chevron-left{
   font-size: 3rem;
+  position: relative;
+  right: 220px;
 }
 
 /* nav  */
-
+.option-bar-container{
+  width: 50%;
+  position: relative;
+}
 .options-bar{
   display: flex;
   list-style: none;
   text-decoration: none;
   position: relative;
   left:500px;
-  width: 48vw;
   justify-content: space-between;
 }
 .option-bar-container .options-bar  li a{
@@ -226,7 +203,7 @@ header{
   text-decoration: none;
   font-size: 1.5em;
   display: block;
-  height: 105px;
+  height: 4%;
   padding: 30px;
   white-space: nowrap;
   position: relative;
@@ -253,6 +230,9 @@ header{
   font-size: 1.5rem;
 }
 @media (max-width:800px){
+   .option-bar-container{
+       width: 100%;
+   }
   .options-bar{
       position: relative;
       display: flex;
@@ -300,4 +280,239 @@ header{
       font-size: 5.9vw;
       padding: 1.8em;
   }
-} 
+}
+.sobre-nosotros{
+  position: relative;
+  background-image: url(/img/local.jpg);
+  height: 30%;
+  width: 100%;
+  background-size: cover;
+  background-position: 0px -500px ;
+  bottom: 362px;
+  box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
+}
+.backdrop{
+  height: 30vw;
+  backdrop-filter: blur(4px);
+}
+.card{
+  height: 35%;
+  width: 40%;
+  background-color: rgba(247, 244, 244, 0.7);
+  position: relative;
+  top: 150px;
+  font-family: 'Cabin', sans-serif;
+  border-radius: 10px;
+  margin-left: 60px;
+}
+.title-sobre-nosotros{
+  text-align: center;
+  font-size: 2rem;
+}
+.parrafo-sobre-nosotros{
+  font-size: 1.5rem;
+  padding-top: 10px;
+  color: rgb(29, 29, 29);
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.sobre-nosotros .backdrop .card .a-sobre-nosotros{
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  align-items: center;
+  height: 50px;
+  width: 15%;
+  background-color: rgb(53, 0, 53);
+  color: rgb(255, 231, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+.productos{
+  position: relative;
+  background-image: url(/img/designed-sunglasses-red-book-grey-surface.jpg);
+  height: 40%;
+  width: 100%;
+  background-size: cover;
+  background-position: 0px -500px;
+  bottom: 291px;
+  box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
+}
+.backdrop-card{
+  backdrop-filter: blur(6px);
+  height: 600px;
+}
+.card-productos{
+  height: 10vw;
+  width: 40vw;
+  background-color: rgba(247, 244, 244, 0.7);
+  border-radius: 10px;
+  position: relative;
+  left: 1070px;
+  top: 150px;
+  font-family: 'Cabin', sans-serif;
+}
+.title-productos{
+  text-align: center;
+  font-size: 2em;
+}
+.parrafo-productos{
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 10px;
+}
+.a-productos{
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  align-items: center;
+  height: 2vw;
+  width: 5vw;
+  background-color: rgb(53, 0, 53);
+  color: rgb(255, 231, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.contacto{
+  position: relative;
+  background-image: url(/img/descarga.png);
+  height: 30vw;
+  width: 100%;
+  background-size: cover;
+  background-position: 0px -90px;
+  bottom: 221px;
+  box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
+}
+.backdrop-contacto{
+  height: 30vw;
+  backdrop-filter: blur(4px);
+}
+.card-contacto{
+  height: 10vw;
+  width: 40%;
+  background-color: rgba(247, 244, 244, 0.7);
+  position: relative;
+  top: 150px;
+  font-family: 'Cabin', sans-serif;
+  border-radius: 10px;
+  margin-left: 60px;
+}
+.title-contacto{
+  text-align: center;
+  font-size: 2vw;
+}
+.parrafo-contacto{
+  font-size: 1.5vw;
+  text-align: center;
+  padding-top: 30px;
+}
+.a-contacto{
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 5px;
+  align-items: center;
+  height: 2vw;
+  width: 6vw;
+  background-color: rgb(53, 0, 53);
+  color: rgb(255, 231, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+.footer-container{
+  height: 600px;
+  width: 100%;
+  background-color: rgb(19, 0, 18);
+  font-family: 'Cabin', sans-serif;
+  color: rgb(247, 226, 226);
+}
+.footer-title{
+  font-size: 3.8em;
+  text-align: center;
+}
+.redes-sociales{
+  position: relative;
+  top: 250px;
+  margin: auto;
+  height: 2%;
+  width: 10%;
+}
+.logo-facebook{
+  height: 3em;
+  border: 1px solid white;
+}
+.logo-instagram{
+  height: 3em;
+  width: 3em;
+  border: 1px solid white;
+}
+.paginas-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  top: 100px;
+}
+.paginas-container ul li{
+  list-style: none;
+  font-size: 1.2em;
+  padding-top: 25px;
+}
+.paginas-container ul li a{
+  text-decoration: none;
+  color: rgb(247, 226, 226);
+}
+.ubicacion{
+  position: relative;
+  left: 1500px;
+  bottom: 120px;
+  width: 15%;
+}
+.beiro{
+  position: relative;
+  bottom: 140px;
+  left: 1517px;
+}
+.google-maps{
+  position: relative;
+  left: 1265px;
+  bottom: 80px;
+  color: rgb(247, 226, 226);
+}
+.preguntas{
+  position: relative;
+  bottom: 402px;
+  left: 480px;
+  width: 20%;
+}
+.preguntas ul li{
+  list-style: none;
+  font-size: 1.2em;
+  padding-top: 25px;
+}
+.preguntas ul li a{
+  text-decoration: none;
+  color: rgb(247, 226, 226);
+}
+.contacto-num{
+  position: relative;
+  bottom: 735px;
+  left: 30px;
+}
+.numero-contacto{
+  position: relative;
+  left: 880px;
+  top: 28px;
+  font-size: 1em;
+}
