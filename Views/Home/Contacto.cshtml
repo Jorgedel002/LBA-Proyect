@@ -1,0 +1,64 @@
+@{
+    ViewBag.title = "Contacto";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/988a301a8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="contact-body-container">
+        <div class="information-contact">
+            <div class="container-information">
+                <ul>
+                    <li>
+                        <div class="maps-ubication">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <h2 class="title-information">Ubicación</h2>
+                            <p>Av. Francisco Beiro 5665</p>
+                            <p style="padding-top: 10px;">Villa devoto</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="numero-contacto">
+                            <i class="fas fa-phone icon"></i>
+                            <h2 class="title-information">Numero</h2>
+                            <p>11 3420-0053</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="facebook-contact">
+                            <i class="fab fa-facebook-f icon"></i>
+                            <h2 class="title-information">Facebook</h2>
+                            <a href="https://www.facebook.com/anteojoss" class="link-facebook" target="_blank">Facebook.com/anteojoss</a>
+                        </div>
+                    </li>
+                </ul>                
+            </div>
+        </div>
+        <div class="container-contact">
+            <div class="form-contact">
+                <h1 class="contactanos">Contactanos!</h1>
+                <form action="">
+                    <div class="name-input">
+                        <input type="text" placeholder="Nombre" class="name" required>                        
+                    </div>
+                    <div class="last-name-input">
+                        <input type="text" placeholder="Apellido" class="last-name" required>
+                    </div>
+                    <div class="numero-input">
+                        <input type="text" placeholder="Numero de celular" class="phone-number" required>
+                    </div>
+                    <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escriba su consulta"></textarea>
+                    <input type="submit" value="Enviar" class="btn submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

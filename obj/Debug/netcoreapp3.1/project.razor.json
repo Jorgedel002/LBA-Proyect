@@ -14397,8 +14397,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Puerco y Criatura\\Documents\\GitHub\\LBA-Proyect\\Views\\Home\\Register.cshtml",
+      "TargetPath": "Views\\Home\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Puerco y Criatura\\Documents\\GitHub\\LBA-Proyect\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Puerco y Criatura\\Documents\\GitHub\\LBA-Proyect\\Views\\Home\\Contacto.cshtml",
+      "TargetPath": "Views\\Home\\Contacto.cshtml",
       "FileKind": "mvc"
     },
     {

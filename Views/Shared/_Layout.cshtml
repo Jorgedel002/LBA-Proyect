@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - LBA_Proyect</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/988a301a8c.js" crossorigin="anonymous"></script>
+    @RenderSection("sites", required: false)
 </head>
 <body>
 <div class="header">
@@ -34,8 +35,8 @@
             </div>
             <div class="option-bar-container">
                 <ul class="options-bar">
-                    <li><a class="inicio-nav" href="">Inicio</a></li>
-                    <li><a class="contacto-nav" href="">Contacto</a></li>
+                    <li><a class="inicio-nav">Inicio</a></li>
+                    <li><a class="contacto-nav" asp-asp-controller="Home" asp-action="Contacto">Contacto</a></li>
                     <li><a class="sobre-nosotros-nav" href="">Sobre nosotros</a></li>
                     <li><a class="productos-nav" href="">Productos</a></li>
                 </ul>                
@@ -43,7 +44,7 @@
             <div class="irp-container">
                 <ul>
                     <li><a class="perfil-nav" href=""><i class="fas fa-user"></i></a></li>
-                    <li><a class="iniciar-sesion-nav" href=""><i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a class="iniciar-sesion-nav" asp-asp-controller="Home" asp-action="Register"><i class="fas fa-sign-in-alt"></i></a></li>
                     <li><a class="registrese-nav" href=""><i class="fas fa-key"></i></a></li>                
                 </ul>
             </div>
@@ -68,8 +69,8 @@
                     <img src="~/img/instagram-logo.jpg" alt="instagram-link" class="logo-instagram">
                 </div>
                 <h2 class="beiro">Av.Francisco Beiro 5665</h2>
-                <img src="~/img/Captura de pantalla (3).png" alt="ubicación" class="ubicacion" >
                 @* <a href="https://www.google.com/maps/place/Av.+Francisco+Beir%C3%B3+5665,+Buenos+Aires/@-34.6167789,-58.5296224,17.17z/data=!4m13!1m7!3m6!1s0x95bcb71661588a8b:0xf09d99bc532d2044!2sAv.+Francisco+Beir%C3%B3+5665,+Buenos+Aires!3b1!8m2!3d-34.6168471!4d-58.5291014!3m4!1s0x95bcb71661588a8b:0xf09d99bc532d2044!8m2!3d-34.6168471!4d-58.5291014" class="google-maps" target="_Blank">Google maps - Ubicación</a> *@
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.498427668572!2d-58.53129008423649!3d-34.61684266570074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7df1896ffe9%3A0xb6b46398b2571d55!2sLa%20Boutique%20del%20Anteojo!5e0!3m2!1ses-419!2sar!4v1605307187288!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 <div class="preguntas">
                     <h1 class="title-preguntas">Preguntas frecuentes</h1>
                     <ul>
@@ -86,8 +87,8 @@
                 </div>
             </div>
         </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>

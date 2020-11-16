@@ -10,6 +10,7 @@ header{
   top: 0px;
   z-index: 300;
   bottom: 105px;
+  height: 200px;
 }
 .head{
   position: relative;
@@ -148,7 +149,7 @@ header{
   margin: auto;
   overflow: hidden;
   position: relative;
-  bottom: 409px;
+  bottom: 100px;
 }
 
 .slider__images{
@@ -189,6 +190,7 @@ header{
 .option-bar-container{
   width: 50%;
   position: relative;
+  bottom: 290px;
 }
 .options-bar{
   display: flex;
@@ -207,11 +209,15 @@ header{
   padding: 30px;
   white-space: nowrap;
   position: relative;
-  bottom: 280px;
   z-index: 1100;
 }
 .option-bar-container .options-bar li{
   height: 136px;
+}
+.irp-container{
+  position: relative;
+  bottom: 500px;
+  left: 1700px;
 }
 .irp-container ul{
   display: flex;
@@ -221,8 +227,6 @@ header{
   width: 150px;
   justify-content: space-between;
   position: relative;
-  bottom: 475px;
-  left: 1700px;
   z-index: 1000;
 }
 .irp-container ul li a{
@@ -473,16 +477,17 @@ header{
   text-decoration: none;
   color: rgb(247, 226, 226);
 }
-.ubicacion{
+iframe{
   position: relative;
   left: 1500px;
   bottom: 120px;
   width: 15%;
+  height: 25.4vh;
 }
 .beiro{
   position: relative;
   bottom: 140px;
-  left: 1517px;
+  left: 1490px;
 }
 .google-maps{
   position: relative;
