@@ -10,7 +10,6 @@ header{
   top: 0px;
   z-index: 300;
   bottom: 105px;
-  height: 200px;
 }
 .head{
   position: relative;
@@ -149,7 +148,7 @@ header{
   margin: auto;
   overflow: hidden;
   position: relative;
-  bottom: 100px;
+  bottom: 368px;
 }
 
 .slider__images{
@@ -190,7 +189,7 @@ header{
 .option-bar-container{
   width: 50%;
   position: relative;
-  bottom: 290px;
+  bottom: 280px;
 }
 .options-bar{
   display: flex;
@@ -214,11 +213,6 @@ header{
 .option-bar-container .options-bar li{
   height: 136px;
 }
-.irp-container{
-  position: relative;
-  bottom: 500px;
-  left: 1700px;
-}
 .irp-container ul{
   display: flex;
   flex-direction: row;
@@ -227,6 +221,8 @@ header{
   width: 150px;
   justify-content: space-between;
   position: relative;
+  bottom: 475px;
+  left: 1700px;
   z-index: 1000;
 }
 .irp-container ul li a{
@@ -281,8 +277,9 @@ header{
       bottom: 608px;
   }
   .title{
-      font-size: 5.9vw;
+      font-size: 6.5vh;
       padding: 1.8em;
+      min-height: 2vh;
   }
 }
 .sobre-nosotros{
@@ -300,8 +297,8 @@ header{
   backdrop-filter: blur(4px);
 }
 .card{
-  height: 35%;
-  width: 40%;
+  width: 80vh;
+  min-height: 20vh;
   background-color: rgba(247, 244, 244, 0.7);
   position: relative;
   top: 150px;
@@ -321,19 +318,21 @@ header{
   margin-left: 10px;
   margin-right: 10px;
 }
-.sobre-nosotros .backdrop .card .a-sobre-nosotros{
+.a-sobre-nosotros{
   display: flex;
   margin: auto;
   margin-top: 10px;
   border-radius: 5px;
   align-items: center;
-  height: 50px;
-  width: 15%;
+  justify-content: center;
+  height: 4vh;
+  width: 25%;
   background-color: rgb(53, 0, 53);
   color: rgb(255, 231, 255);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: .8em;
+  white-space: nowrap;
 }
 .productos{
   position: relative;
@@ -350,8 +349,8 @@ header{
   height: 600px;
 }
 .card-productos{
-  height: 10vw;
-  width: 40vw;
+  min-height: 20vh;
+  width: 80vh;
   background-color: rgba(247, 244, 244, 0.7);
   border-radius: 10px;
   position: relative;
@@ -374,14 +373,14 @@ header{
   margin-top: 10px;
   border-radius: 5px;
   align-items: center;
-  height: 2vw;
-  width: 5vw;
+  justify-content: center;
+  height: 4vh;
+  width: 25%;
   background-color: rgb(53, 0, 53);
   color: rgb(255, 231, 255);
   text-decoration: none;
   text-transform: uppercase;
   font-size: .8em;
-  padding-left: 20px;
   margin-top: 20px;
 }
 .contacto{
@@ -399,8 +398,8 @@ header{
   backdrop-filter: blur(4px);
 }
 .card-contacto{
-  height: 10vw;
-  width: 40%;
+  min-height: 20vh;
+  width: 80vh;
   background-color: rgba(247, 244, 244, 0.7);
   position: relative;
   top: 150px;
@@ -423,8 +422,9 @@ header{
   margin-top: 30px;
   border-radius: 5px;
   align-items: center;
-  height: 2vw;
-  width: 6vw;
+  justify-content: center;
+  height: 4vh;
+  width: 25%;
   background-color: rgb(53, 0, 53);
   color: rgb(255, 231, 255);
   text-decoration: none;
@@ -477,27 +477,28 @@ header{
   text-decoration: none;
   color: rgb(247, 226, 226);
 }
-iframe{
+.ubicacion{
   position: relative;
   left: 1500px;
   bottom: 120px;
   width: 15%;
-  height: 25.4vh;
 }
 .beiro{
   position: relative;
   bottom: 140px;
-  left: 1490px;
+  left: 1517px;
 }
-.google-maps{
+iframe {
   position: relative;
-  left: 1265px;
-  bottom: 80px;
+  left: 1455px;
+  bottom: 100px;
+  width: 20%;
+  height: 248px;
   color: rgb(247, 226, 226);
 }
 .preguntas{
   position: relative;
-  bottom: 402px;
+  bottom: 392px;
   left: 480px;
   width: 20%;
 }
@@ -512,12 +513,12 @@ iframe{
 }
 .contacto-num{
   position: relative;
-  bottom: 735px;
+  bottom: 677px;
   left: 30px;
 }
 .numero-contacto{
   position: relative;
   left: 880px;
-  top: 28px;
+  top: 20px;
   font-size: 1em;
 }

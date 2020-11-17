@@ -36,7 +36,7 @@
             <div class="option-bar-container">
                 <ul class="options-bar">
                     <li><a class="inicio-nav">Inicio</a></li>
-                    <li><a class="contacto-nav" asp-asp-controller="Home" asp-action="Contacto">Contacto</a></li>
+                    <li><a class="contacto-nav" asp-controller="Home" asp-action="Contacto">Contacto</a></li>
                     <li><a class="sobre-nosotros-nav" href="">Sobre nosotros</a></li>
                     <li><a class="productos-nav" href="">Productos</a></li>
                 </ul>                
@@ -44,7 +44,7 @@
             <div class="irp-container">
                 <ul>
                     <li><a class="perfil-nav" href=""><i class="fas fa-user"></i></a></li>
-                    <li><a class="iniciar-sesion-nav" asp-asp-controller="Home" asp-action="Register"><i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a class="iniciar-sesion-nav" asp-controller="Home" asp-action="Register"><i class="fas fa-sign-in-alt"></i></a></li>
                     <li><a class="registrese-nav" href=""><i class="fas fa-key"></i></a></li>                
                 </ul>
             </div>
@@ -91,5 +91,6 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+
 </body>
 </html>

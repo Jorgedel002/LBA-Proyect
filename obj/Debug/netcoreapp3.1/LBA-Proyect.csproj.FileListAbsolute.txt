@@ -171,3 +171,4 @@ C:\Users\Puerco y Criatura\Documents\GitHub\LBA-Proyect\obj\Debug\netcoreapp3.1\
 C:\Users\Puerco y Criatura\Documents\GitHub\LBA-Proyect\obj\Debug\netcoreapp3.1\LBA-Proyect.genruntimeconfig.cache
 C:\Users\Puerco y Criatura\Documents\GitHub\LBA-Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Home\Register.cshtml.g.cs
 C:\Users\Puerco y Criatura\Documents\GitHub\LBA-Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contacto.cshtml.g.cs
+C:\Users\Puerco y Criatura\Documents\GitHub\LBA-Proyect\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Register_sin_header.cshtml.g.cs

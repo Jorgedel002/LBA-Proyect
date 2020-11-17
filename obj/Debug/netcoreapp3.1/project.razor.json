@@ -14402,6 +14402,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Puerco y Criatura\\Documents\\GitHub\\LBA-Proyect\\Views\\Shared\\_Register_sin_header.cshtml",
+      "TargetPath": "Views\\Shared\\_Register_sin_header.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Puerco y Criatura\\Documents\\GitHub\\LBA-Proyect\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

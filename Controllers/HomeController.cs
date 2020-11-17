@@ -31,7 +31,20 @@ namespace LBA_Proyect.Controllers
         {
             return View();
         }
-        
+        public IActionResult Register()
+        {
+            return View();
+        }
+        // public JsonResult AgregarUsuariasALaSesión(string mail, string nombre)
+        // {
+        //     Usuario nuevoUsuario = new Usuario{
+        //         Mail = mail,
+        //         Nombre = nombre
+        //     };
+
+        //     HttpContext.Session.Set<Usuario>("UsuarioLoggeado", nuevoUsuario);
+        //     return Json (nuevoUsuario);
+        // }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
